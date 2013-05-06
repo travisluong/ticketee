@@ -42,4 +42,7 @@ RSpec.configure do |config|
 
   # EmailSpec
   config.include EmailSpec::Helpers
+
+  # Devise Spec
+  config.include Devise::TestHelpers, :type => :controller
 end
