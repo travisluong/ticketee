@@ -3,6 +3,7 @@ require 'spec_helper'
 feature "Viewing projects" do
   let!(:user) { Factory(:confirmed_user) }
   let!(:project) { Factory(:project) }
+  let!(:project_2) { Factory(:project, :name => "Internet Explorer") }
 
   before do
     sign_in_as!(user)
